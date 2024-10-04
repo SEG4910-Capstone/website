@@ -1,0 +1,25 @@
+.navbar-custom {
+    background-color: #000;
+    padding: 20px;
+  }
+  
+  .navbar-custom .navbar-logo {
+    height: 40px;
+  }
+  
+  .navbar-custom .navbar-nav .nav-link {
+    color: #ffffff;
+    margin: 0 15px;
+    font-weight: 500;
+  }
+  
+  .navbar-custom .navbar-nav .nav-link:hover {
+    color: #ff69b4;
+  }
+  
+  .navbar-btn {
+    margin-left: 10px;
+    color: #ffffff;
+    border-color: #ff69b4;
+  }
+  
