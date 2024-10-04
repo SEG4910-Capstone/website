@@ -9,13 +9,18 @@ const HeroSection = () => {
           uOttawa <span className="highlight">Autonomous Vehicles</span>
         </h1>
         <p className="hero-subtitle">
-          Leverage advanced sensors, AI algorithms, and precise control systems to create autonomous vehicles.
+          Leverage advanced sensors, AI algorithms, and precise control systems to create autonomous vehicles in a high-paced environment.
         </p>
-        <button className="hero-button">Join the Team →</button>
+        <button className="hero-button">
+          Join the Team <span className="hero-arrow">→</span>
+        </button>
       </div>
-      <img src="path-to-hero-image.png" alt="uOAV Logo" className="hero-image" />
+      <div className="hero-image">
+        <img src="/logo.png" alt="uOAV Logo" className="hero-logo" />
+      </div>
     </div>
   );
 };
 
 export default HeroSection;
+

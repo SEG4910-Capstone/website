@@ -1,26 +1,36 @@
 .footer-container {
     background-color: #000;
-    color: #fff;
+    color: #fff; 
     text-align: center;
-    padding: 50px 0;
+    padding: 60px 0; 
   }
   
   .footer-title {
-    font-size: 2rem;
-    font-weight: bold;
+    font-size: 2rem; 
+    font-weight: 700;
+    margin-bottom: 15px;
   }
   
   .footer-icons {
-    margin: 20px 0;
+    margin: 30px 0; 
   }
   
   .footer-icon {
     color: #ff69b4;
     margin: 0 15px;
-    font-size: 1.5rem;
+    font-size: 2rem; 
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
   }
   
   .footer-icon:hover {
-    color: #ffffff;
+    color: #ffffff; 
   }
+  
+  .footer-text {
+    margin-top: 20px;
+    font-size: 0.875rem;
+    font-weight: 400;
+  }
+  
   

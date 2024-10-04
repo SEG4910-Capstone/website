@@ -12,7 +12,7 @@ const Footer = () => {
         <FaYoutube className="footer-icon" />
         <FaLinkedin className="footer-icon" />
       </div>
-      <p>© 2021-2023 uOAV | Powered by uOAV</p>
+      <p>© 2021-2024 uOAV | Powered by uOAV</p>
     </footer>
   );
 };

@@ -1,25 +1,86 @@
+
 .navbar-custom {
-    background-color: #000;
-    padding: 20px;
+    background-color: #000; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 15px 50px; 
+  }
+
+  .navbar-brand-custom {
+    color: #ffffff; 
+    font-size: 16px; 
+    font-weight: 1000; 
+    padding: 8px 20px; 
+    cursor: default;
+    text-decoration: none; 
   }
   
-  .navbar-custom .navbar-logo {
+  .navbar-brand-custom:hover {
+    color: #ffffff; 
+  }
+
+  .navbar-left {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar-right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+  }
+  
+
+  .navbar-logo {
     height: 40px;
+    margin-right: 20px;
   }
   
-  .navbar-custom .navbar-nav .nav-link {
-    color: #ffffff;
-    margin: 0 15px;
-    font-weight: 500;
+
+  .nav-links {
+    display: flex; 
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    gap: 30px; 
   }
   
-  .navbar-custom .navbar-nav .nav-link:hover {
+  .nav-links .nav-link {
+    color: #ffffff; 
+    font-size: 16px; 
+    text-transform: uppercase; 
+    font-weight: 700;
+    text-decoration: none; 
+    font-family: 'Roboto', sans-serif; 
+    transition: color 0.3s ease-in-out;
+  }
+  
+  
+  .nav-links .nav-link:hover {
     color: #ff69b4;
+    text-decoration: none;
+  }
+
+  .join-btn {
+    margin-left: 20px;
+    padding: 10px 20px;
+    background: transparent;
+    border: 2px solid #00e5ff;
+    border-radius: 25px;
+    color: #00e5ff;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
   }
   
-  .navbar-btn {
-    margin-left: 10px;
+  .join-btn:hover {
+    background-color: #00e5ff; 
     color: #ffffff;
-    border-color: #ff69b4;
   }
+  
+  
+  
+  
   
