@@ -1,0 +1,26 @@
+.footer-container {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 50px 0;
+  }
+  
+  .footer-title {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  .footer-icons {
+    margin: 20px 0;
+  }
+  
+  .footer-icon {
+    color: #ff69b4;
+    margin: 0 15px;
+    font-size: 1.5rem;
+  }
+  
+  .footer-icon:hover {
+    color: #ffffff;
+  }
+  
