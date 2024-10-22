@@ -1,0 +1,31 @@
+.weare-section-bottom {
+  background-color: #002855;
+  padding: 100px 0; 
+  text-align: center;
+  color: #ffffff; 
+}
+
+.weare-title h2 {
+  font-size: 3rem; 
+  font-weight: 700; 
+  margin-bottom: 30px;
+  color: #ffffff;
+}
+
+.highlight {
+  background: -webkit-linear-gradient(#00e5ff, #00c9ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.video-container {
+  display: flex;
+  justify-content: center; 
+}
+
+.youtube-video {
+  border: 5px solid #ffffff;
+  border-radius: 10px; 
+}
+
+  
