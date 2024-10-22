@@ -1,5 +1,5 @@
 import React from 'react';
-import './WeAreSectionBottom.css';
+import '../styles/WeAreSectionBottom.css';
 
 const WeAreSectionBottom = () => {
   return (

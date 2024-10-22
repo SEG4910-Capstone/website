@@ -1,10 +1,11 @@
 import React from 'react';
-import NavigationBar from './Navbar';
-import HeroSection from './HeroSection';
-import Footer from './Footer';
-import WeAreSectionBottom from './WeAreSectionBottom';
+import NavigationBar from './components/Navbar';
+import HeroSection from './components/HeroSection';
+import Footer from './components/Footer';
+import WeAreSectionBottom from './components/WeAreSectionBottom';
+import CompetitionSection from './components/CompetitionSection';
 
-import './App.css';
+import './styles/App.css';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <NavigationBar />
       <HeroSection />
       <WeAreSectionBottom/>
+      <CompetitionSection />
       <Footer />
     </div>
   );
