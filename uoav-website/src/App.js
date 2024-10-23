@@ -1,24 +1,25 @@
 import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import NavigationBar from './components/Navbar';
-import HeroSection from './components/HeroSection';
-import Footer from './components/Footer';
-import WeAreSectionBottom from './components/WeAreSectionBottom';
-import CompetitionSection from './components/CompetitionSection';
-
+import HomePage from './components/HomePage'; 
+import Team from './components/Team'; 
 import './styles/App.css';
 
 function App() {
   return (
-    <div className="App">
-      <NavigationBar />
-      <HeroSection />
-      <WeAreSectionBottom/>
-      <CompetitionSection />
-      <Footer />
-    </div>
+
+      <div className="App">
+        <NavigationBar />
+        <Routes>
+          <Route path="/" element={<HomePage />} /> 
+          <Route path="/team" element={<Team />} /> 
+        </Routes>
+      </div>
+  
   );
 }
 
 export default App;
+
 
 
