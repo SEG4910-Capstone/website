@@ -1,25 +1,31 @@
 import React from 'react';
-import { Navbar, Nav } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+import { Navbar, Nav, Button } from 'react-bootstrap';
+import { NavLink } from 'react-router-dom';
 import '../styles/Navbar.css';
+
+const pages = [
+  { name: "About", href: "/about" },
+  { name: "Team", href: "/team" },
+  { name: "Partners", href: "/partners" },
+  { name: "Docs", href: "/docs" },
+  { name: "Contact Us", href: "/contact" }
+]
 
 const NavigationBar = () => {
   return (
     <Navbar expand="lg" className="navbar-custom" fixed="top">
       <div className="navbar-left">
-        <Navbar.Brand as={Link} to="/" className="navbar-brand-custom">
+        <Navbar.Brand as={NavLink} to="/" className="navbar-brand-custom">
           uOAV
         </Navbar.Brand>
       </div>
-    
-      <Navbar.Collapse id="basic-navbar-nav">
+
+      <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
         <div className="navbar-right">
           <Nav className="nav-links">
-            <Nav.Link as={Link} to="/partners" className="nav-link">Partners</Nav.Link>
-            <Nav.Link as={Link} to="/docs" className="nav-link">Docs</Nav.Link>
-            <Nav.Link as={Link} to="/contact" className="nav-link">Contact Us</Nav.Link>
-            <Nav.Link as={Link} to="/about" className="nav-link">About</Nav.Link>
-            <Nav.Link as={Link} to="/team" className="nav-link">Team</Nav.Link>
+            {pages.map((item) => (
+              <Nav.Link as={NavLink} to={item.href} className="nav-link">{item.name}</Nav.Link>
+            ))}
           </Nav>
           <button className="join-btn">Join the Team</button>
         </div>
