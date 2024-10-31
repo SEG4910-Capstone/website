@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
 body, html {
   margin: 0;
   padding: 0;
-  font-family: 'Roboto', sans-serif; 
+  font-family: 'Inter', sans-serif; 
 }
 
 section {
@@ -18,10 +20,10 @@ section {
 }
 
 h1, h2, h3, h4 {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 700;
 }
-
+ 
 p {
   font-size: 1rem;
   line-height: 1.6;
@@ -29,7 +31,7 @@ p {
 }
 
 button {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 500;
 }
 
@@ -40,6 +42,4 @@ button {
 .text-left {
   text-align: left;
 }
-
-
 

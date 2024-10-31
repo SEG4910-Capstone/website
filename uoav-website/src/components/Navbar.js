@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom';
 import '../styles/Navbar.css';
 
 const pages = [
-  { name: "About", href: "/about" },
+  { name: "Home", href: "/" },
   { name: "Team", href: "/team" },
   { name: "Partners", href: "/partners" },
   { name: "Docs", href: "/docs" },

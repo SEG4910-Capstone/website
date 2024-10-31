@@ -49,10 +49,9 @@
 .nav-links .nav-link {
   color: #ffffff;
   font-size: 16px;
-  text-transform: uppercase;
   font-weight: 700;
   text-decoration: none;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Inter', sans-serif;
   transition: color 0.3s ease-in-out;
 }
 
@@ -70,9 +69,9 @@
   padding: 10px 20px;
   background: transparent;
   border: 2px solid #00e5ff;
-  border-radius: 25px;
+  border-radius: 5px;
   color: #00e5ff;
-  font-weight: 600;
+  font-weight: 800;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
 }
