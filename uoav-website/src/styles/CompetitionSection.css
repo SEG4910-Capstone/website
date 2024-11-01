@@ -1,6 +1,26 @@
-.competition-section {
-    background-color: #f7f7f7; 
-    padding: 80px 0; 
+  .competition-section {
+    padding: 50px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+    margin-bottom: 6rem;
+  }
+  
+  .image-wrapper {
+    position: relative;
+    display: inline-block;
+  }
+
+  .image-overlay {
+    position: absolute;
+    bottom: 30px; /*overlay offsets*/
+    right: 100px;  /*overlay offsets*/
+    width: 90%;
+    height: 100%;
+    background-color: #00e5ff;
+    border-radius: 8px; 
+    z-index: -1;
   }
   
   .competition-content {
@@ -18,8 +38,7 @@
   }
   
   .competition-image {
-    width: 100%; 
-    border: 8px solid #00e5ff;
+    width: 90%; 
     border-radius: 8px; 
   }
   
@@ -27,37 +46,38 @@
     flex: 1.5; 
     text-align: left;
     padding-left: 30px; 
+    max-width: 600px;
+    margin-top: 50px;
   }
   
   .competition-title {
-    font-size: 3.5rem; 
+    font-size: 3rem; 
     font-weight: 800;
     margin-bottom: 20px;
-    text-align: center;
+    text-align: left;
   }
   
   .competition-description {
-    font-size: 1.25rem; 
     line-height: 1.6;
+    padding-right: 1.5rem;
+    margin-top: 30px;
     margin-bottom: 30px;
-    color: #4a4a4a;
   }
   
   .read-more-btn {
     background: #000;
     color: #fff; 
-    padding: 12px 30px;
+    padding: 10px 30px;
     border: none;
-    border-radius: 25px;
-    font-size: 1.25rem;
+    border-radius: 5px;
     font-weight: 600;
     cursor: pointer;
-    text-transform: uppercase;
     display: flex;
+    margin-top: 50px;
     align-items: center;
     gap: 10px;
   }
-  
+
   .read-more-btn .arrow {
     font-weight: bold;
     transition: margin-left 0.3s;

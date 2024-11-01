@@ -16,9 +16,9 @@ const PartnerCard = ({ logoSrc, title, description, link }) => {
             <h3 className="partner-title mb-3">{title}</h3>
             <p className="partner-description">{description}</p>
             <div className="learn-more-container">
-              <Button variant="dark" href={link} target="_blank" rel="noopener noreferrer" className="btn-custom learn-more-btn mt-2">
-                Learn More →
-              </Button>
+              <button variant="dark" href={link} target="_blank" rel="noopener noreferrer" className="btn-custom learn-more-btn mt-2">
+                Learn More <span className="arrow">→</span>
+              </button>
             </div>
           </div>
         </Col>

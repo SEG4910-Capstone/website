@@ -6,9 +6,16 @@ const CompetitionSection = () => {
   return (
     <section className="competition-section">
       <div className="competition-content">
-        <div className="competition-image-container">
-          <img src={competitionImage} alt="The Competition" className="competition-image" />
+
+        <div className="image-wrapper">
+          <div className="image-overlay"></div>
+          <img
+            src="https://placehold.co/600x400" 
+            alt="The Competition"
+            className="competition-image"
+          />
         </div>
+
         <div className="competition-text">
           <h2 className="competition-title">The Competition</h2>
           <p className="competition-description">
@@ -18,6 +25,7 @@ const CompetitionSection = () => {
             Read More <span className="arrow">→</span>
           </button>
         </div>
+
       </div>
     </section>
   );

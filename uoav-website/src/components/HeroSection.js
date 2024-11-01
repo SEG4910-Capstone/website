@@ -6,7 +6,7 @@ const HeroSection = () => {
     <div className="hero-container">
       <div className="hero-content">
         <h1 className="hero-title">
-          uOttawa <span className="highlight">Autonomous Vehicles</span>
+          uOttawa <span className="highlight">Autonomous</span> Vehicles
         </h1>
         <p className="hero-subtitle">
           Leverage advanced sensors, AI algorithms, and precise control systems to create autonomous vehicles in a high-paced environment.
@@ -18,7 +18,7 @@ const HeroSection = () => {
       <div className="hero-image">
         <img src="/logo.png" alt="uOAV Logo" className="hero-logo" />
       </div>
-    </div>
+    </div> 
   );
 };
 

@@ -10,9 +10,8 @@ const HomePage = () => {
       <HeroSection />
       <WeAreSectionBottom />
       <CompetitionSection />
-      <Footer />
     </div>
   );
-}; 
+};  
 
 export default HomePage;
