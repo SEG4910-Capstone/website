@@ -7,7 +7,7 @@ const pages = [
   { name: "Home", href: "/" },
   { name: "Team", href: "/team" },
   { name: "Partners", href: "/partners" },
-  { name: "Docs", href: "/docs" },
+  { name: "Docs", href: "https://www.uocav.ca/docs" },
   { name: "Contact Us", href: "/contact" }
 ]
 
@@ -24,10 +24,19 @@ const NavigationBar = () => {
         <div className="navbar-right">
           <Nav className="nav-links">
             {pages.map((item) => (
-              <Nav.Link as={NavLink} to={item.href} className="nav-link">{item.name}</Nav.Link>
+              <Nav.Link as={NavLink} to={item.href} className="nav-link" key={item.name}>
+                {item.name}
+              </Nav.Link>
             ))}
           </Nav>
-          <button className="join-btn">Join the Team</button>
+          <a 
+            href="https://forms.office.com/Pages/ResponsePage.aspx?id=sdof1BV-_Uy1-nIA5U3ra2S8RqI5r-tPjemcEE7-UlZURUhKM0FTWjI1MFFQMlEyTE84U0daOEIxUCQlQCN0PWcu&origin=QRCode" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="join-btn"
+          >
+            Join the Team
+          </a>
         </div>
       </Navbar.Collapse>
     </Navbar>

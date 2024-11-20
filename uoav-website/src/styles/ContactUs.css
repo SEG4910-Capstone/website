@@ -34,4 +34,31 @@
     border-radius: 8px;
     overflow: hidden;
   }
-  
+
+.social-media {
+  margin-top: 20px;
+}
+
+.social-media-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px; /* Add vertical gap between items */
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.social-media-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.social-icon {
+  font-size: 2rem; /* Make icons bigger */
+  color: #ff69b4; /* Use the same shade of pink as in the footer */
+  margin-right: 10px;
+}
+
+.social-media-item span {
+  font-size: 1.2rem;
+}

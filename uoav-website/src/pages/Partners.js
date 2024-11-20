@@ -10,10 +10,6 @@ const Partners = () => {
     <div> 
       <section className="partners-header text-center py-5">
         <h1 className="section-title">Our Partners</h1>
-        <p className="section-subtitle">
-          Donec condimentum, eros sit amet imperdiet blandit, urna tortor ornare risus...
-        </p>
-        <Button variant="info" className="btn-custom mt-3">Partner with Us</Button>
       </section>
 
       <section className="partners-list container py-5">

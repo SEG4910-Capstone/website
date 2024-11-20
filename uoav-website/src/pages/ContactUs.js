@@ -1,5 +1,6 @@
 import React from 'react';
 import { Container, Row, Col, Form, Button } from 'react-bootstrap';
+import { FaInstagram, FaYoutube, FaLinkedin } from 'react-icons/fa';
 import '../styles/ContactUs.css';
 
 const ContactUs = () => {
@@ -9,36 +10,30 @@ const ContactUs = () => {
         <Col className="contact-us-header" md={8}>
           <h2 className="contact-title">Contact Us</h2>
           <p className="contact-description">
-            Wish to enquire about joining our team, supporting us, or anything else?
-            You can walk in during office hours, or send us an email!
-          </p>
+              Wish to enquire about joining our team, supporting us, or anything else?
+              You can walk in during office hours, or contact us on any of our social media below!
+            </p>
         </Col>
       </Row>
 
       <Row className="justify-content-center mt-4">
         <Col md={5} className="mb-4">
           <Form className="contact-form p-4 shadow-sm">
-            <Row>
-              <Col>
-                <Form.Group controlId="formName" className="mb-3">
-                  <Form.Control type="text" placeholder="Name" />
-                </Form.Group>
-              </Col>
-              <Col>
-                <Form.Group controlId="formEmail" className="mb-3">
-                  <Form.Control type="email" placeholder="Email" />
-                </Form.Group>
-              </Col>
-            </Row>
-            <Form.Group controlId="formSubject" className="mb-3">
-              <Form.Control type="text" placeholder="Subject" />
-            </Form.Group>
-            <Form.Group controlId="formMessage" className="mb-3">
-              <Form.Control as="textarea" rows={5} placeholder="Your Message" />
-            </Form.Group>
-            <Button variant="primary" type="submit" className="submit-button">
-              Send Message
-            </Button>
+            <div className="social-media mt-4">
+              <a href="https://www.instagram.com/ottawa.avg/" target="_blank" rel="noopener noreferrer" className="social-media-item">
+                <FaInstagram className="social-icon" />
+                <span>@ottawa.avg</span>
+              </a>
+              <a href="https://www.youtube.com/channel/UC5UHVxBfFcMO_jw4yqCOOLg?themeRefresh=1" target="_blank" rel="noopener noreferrer" className="social-media-item">
+                <FaYoutube className="social-icon" />
+                <span>@ottawaautonomousvehiclegro9692
+                </span>
+              </a>
+              <a href="https://www.linkedin.com/company/uottawa-autonomous-vehicle-team" target="_blank" rel="noopener noreferrer" className="social-media-item">
+                <FaLinkedin className="social-icon" />
+                <span>uOttawa Autonomous Vehicles</span>
+              </a>
+            </div>
           </Form>
         </Col>
 
