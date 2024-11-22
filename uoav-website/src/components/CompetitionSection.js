@@ -1,6 +1,6 @@
 import React from 'react';
 import '../styles/CompetitionSection.css';
-import competitionImage from '../logo512.png'; // Add proper image
+import competitionImage from '../assets/comp_section_image.jpg'
 
 const CompetitionSection = () => {
   return (
@@ -10,7 +10,7 @@ const CompetitionSection = () => {
         <div className="image-wrapper">
           <div className="image-overlay"></div>
           <img
-            src="https://placehold.co/600x400" 
+            src={competitionImage}
             alt="The Competition"
             className="competition-image"
           />
