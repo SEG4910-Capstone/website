@@ -16,6 +16,7 @@ const NavigationBar = () => {
     <Navbar expand="lg" className="navbar-custom" fixed="top">
       <div className="navbar-left">
         <Navbar.Brand as={NavLink} to="/" className="navbar-brand-custom">
+        <img src="/logo.png" alt="uOAV Logo" className="navbar-logo" />
           uOAV
         </Navbar.Brand>
       </div>
