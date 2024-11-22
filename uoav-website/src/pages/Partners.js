@@ -16,6 +16,13 @@ const Partners = () => {
     document.body.removeChild(link);
   };
 
+  const scrollToSection = (sectionId) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  };
+
   return (
     <div>
       <section className="partners-header text-center py-5">
@@ -25,7 +32,13 @@ const Partners = () => {
           <br></br>
           Together, we’re shaping a future of possibilities through partnership and innovation.
         </p>
-        <Button variant="info" className="btn-custom mt-3">Partner with Us</Button>
+        <Button
+          variant="info"
+          onClick={() => scrollToSection("cta-section")}
+          className="btn-custom mt-3"
+        >
+          Partner with Us
+        </Button>
       </section>
 
       <section className="partners-list container py-5">
@@ -40,7 +53,7 @@ const Partners = () => {
         ))}
       </section>
 
-      <section className="cta-section text-center py-5">
+      <section id="cta-section" className="cta-section text-center py-5">
         <h2 className="cta-title">Interested in Becoming a Partner?</h2>
         <p className="cta-subtitle text-center">
           UOAV team is always looking for new industry partners to work with.
