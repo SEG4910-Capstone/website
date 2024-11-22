@@ -6,10 +6,26 @@ import { partners } from '../constants/Partners';
 import '../styles/Partners.css';
 
 const Partners = () => {
+
+  const handleDownload = () => {
+    const link = document.createElement("a");
+    link.href = "/dummypdf.pdf";
+    link.download = "Sponsorship_Package.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
-    <div> 
+    <div>
       <section className="partners-header text-center py-5">
         <h1 className="section-title">Our Partners</h1>
+        <p className="section-subtitle">
+          Collaborating with industry leaders and innovators to drive progress and achieve shared goals.
+          <br></br>
+          Together, we’re shaping a future of possibilities through partnership and innovation.
+        </p>
+        <Button variant="info" className="btn-custom mt-3">Partner with Us</Button>
       </section>
 
       <section className="partners-list container py-5">
@@ -30,7 +46,13 @@ const Partners = () => {
           UOAV team is always looking for new industry partners to work with.
           Through our team, students are given opportunities to work in a variety of industries using cutting edge technology.
         </p>
-        <Button variant="info" className="btn-custom cta-btn mt-3">Download Sponsorship Package</Button>
+        <Button
+          variant="info"
+          className="btn-custom cta-btn mt-3"
+          onClick={handleDownload}
+        >
+          Download Sponsorship Package
+        </Button>
       </section>
 
     </div>
