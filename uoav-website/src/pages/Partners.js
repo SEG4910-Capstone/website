@@ -2,20 +2,31 @@
 import React from 'react';
 import PartnerCard from '../components/PartnerCard';
 import { partners } from '../constants/Partners';
+import { Button } from 'react-bootstrap';
 import '../styles/Partners.css';
 
 const Partners = () => {
+
+  const handleDownload = () => {
+    const link = document.createElement("a");
+    link.href = "/dummypdf.pdf";
+    link.download = "Sponsorship_Package.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
-    <div className="partners-page">
-      <header className="partners-header text-center py-5">
+    <div>
+      <section className="partners-header text-center py-5">
         <h1 className="section-title">Our Partners</h1>
-        <a 
-          className="btn-partner cta-btn mt-4" 
-          href="link-to-sponsorship-package"
-        >
-          Partner with Us
-        </a>
-      </header>
+        <p className="section-subtitle">
+          Collaborating with industry leaders and innovators to drive progress and achieve shared goals.
+          <br></br>
+          Together, we’re shaping a future of possibilities through partnership and innovation.
+        </p>
+        <Button variant="info" className="btn-custom mt-3">Partner with Us</Button>
+      </section>
 
       <section className="partners-list container py-5">
         {partners.map((partner, index) => (
@@ -35,12 +46,13 @@ const Partners = () => {
           UOAV team is always looking for new industry partners to work with.
           Through our team, students are given opportunities to work in a variety of industries using cutting edge technology.
         </p>
-        <a 
-          className="btn-custom cta-btn mt-3" 
-          href="link-to-sponsorship-package"
+        <Button
+          variant="info"
+          className="btn-custom cta-btn mt-3"
+          onClick={handleDownload}
         >
           Download Sponsorship Package
-        </a>
+        </Button>
       </section>
     </div>
   );

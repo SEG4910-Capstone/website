@@ -14,9 +14,8 @@ const WeAreSectionBottom = () => {
           className="youtube-video"
           width="800"
           height="450"
-          //src="https://www.youtube.com/embed/dQw4w9WgXcQ" // not sure what URL we wanna put here
+          src="https://www.youtube.com/embed/VAFsyuuwNtk?si=PJ8ulYAjAKVUp-v4" 
           title="Autonomous Snowplow"
-          frameBorder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowFullScreen
         ></iframe>

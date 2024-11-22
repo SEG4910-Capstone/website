@@ -1,7 +1,7 @@
 .partners-header {
     background-color: #e91185;
     color: #fff;
-    height: 40vh;
+    height: 70vh;
 }
 
 .section-title {
@@ -18,25 +18,19 @@
 }
 
 .btn-custom {
-    background-color: #ff69b4; /* Pink color */
-    color: white;
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-decoration: none; /* Remove underline */
-    display: inline-block;
-    transition: background-color 0.3s ease;
-}
-
-.btn-custom cta-btn mt-4{
-    background-color: #0056b3;
-    color: #fff;
+    padding: 0.5rem 1.5rem;
+    font-weight: 700;
+    color: black;
+    background-color: #00ffff;
     border: none;
-    padding: 1rem 1.5rem;
-    margin-top: 4rem;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .btn-custom:hover {
-    background-color: #c2185b; /* Darker shade of pink for hover effect */
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.15);
 }
 
 .btn-custom:focus {
@@ -97,7 +91,7 @@
 
 
 .cta-section {
-    background-color: #0056b3;
+    background-color: #0e3384;
     color: #fff;
     height: 50vh;
 }
@@ -127,19 +121,4 @@
         flex-direction: row;
         align-items: center;
     }
-}
-
-.btn-partner {
-  background-color: #00e5ff; /* New color */
-  color: black; /* Black text */
-  padding: 10px 20px;
-  border-radius: 5px;
-  text-decoration: none; /* Remove underline */
-  display: inline-block;
-  transition: background-color 0.3s ease;
-}
-
-.btn-partner:hover {
-  background-color: #ff69b4; /* Pink color for hover effect */
-  color: white; /* White text on hover */
 }
