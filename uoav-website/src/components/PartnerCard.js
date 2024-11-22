@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, Row, Col, Container } from 'react-bootstrap';
+import { Row, Col } from 'react-bootstrap';
 import '../styles/Partners.css';
 
 const PartnerCard = ({ logoSrc, title, description, link }) => {
@@ -16,14 +16,13 @@ const PartnerCard = ({ logoSrc, title, description, link }) => {
             <h3 className="partner-title mb-3">{title}</h3>
             <p className="partner-description">{description}</p>
             <div className="learn-more-container">
-              <button variant="dark" href={link} target="_blank" rel="noopener noreferrer" className="btn-custom learn-more-btn mt-2">
+              <a href={link} target="_blank" rel="noopener noreferrer" className="btn-custom learn-more-btn mt-2">
                 Learn More <span className="arrow">→</span>
-              </button>
+              </a>
             </div>
           </div>
         </Col>
       </Row>
-
     </div>
   );
 };
