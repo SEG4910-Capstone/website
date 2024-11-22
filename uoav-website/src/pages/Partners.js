@@ -1,8 +1,8 @@
 // src/pages/Partners.js
 import React from 'react';
 import PartnerCard from '../components/PartnerCard';
-import { Button } from 'react-bootstrap';
 import { partners } from '../constants/Partners';
+import { Button } from 'react-bootstrap';
 import '../styles/Partners.css';
 
 const Partners = () => {
@@ -54,7 +54,6 @@ const Partners = () => {
           Download Sponsorship Package
         </Button>
       </section>
-
     </div>
   );
 };
