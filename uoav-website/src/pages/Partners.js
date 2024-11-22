@@ -1,16 +1,21 @@
 // src/pages/Partners.js
 import React from 'react';
 import PartnerCard from '../components/PartnerCard';
-import { Button } from 'react-bootstrap';
 import { partners } from '../constants/Partners';
 import '../styles/Partners.css';
 
 const Partners = () => {
   return (
-    <div> 
-      <section className="partners-header text-center py-5">
+    <div className="partners-page">
+      <header className="partners-header text-center py-5">
         <h1 className="section-title">Our Partners</h1>
-      </section>
+        <a 
+          className="btn-partner cta-btn mt-4" 
+          href="link-to-sponsorship-package"
+        >
+          Partner with Us
+        </a>
+      </header>
 
       <section className="partners-list container py-5">
         {partners.map((partner, index) => (
@@ -30,9 +35,13 @@ const Partners = () => {
           UOAV team is always looking for new industry partners to work with.
           Through our team, students are given opportunities to work in a variety of industries using cutting edge technology.
         </p>
-        <Button variant="info" className="btn-custom cta-btn mt-3">Download Sponsorship Package</Button>
+        <a 
+          className="btn-custom cta-btn mt-3" 
+          href="link-to-sponsorship-package"
+        >
+          Download Sponsorship Package
+        </a>
       </section>
-
     </div>
   );
 };
