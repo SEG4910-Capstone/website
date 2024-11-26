@@ -89,7 +89,7 @@
 .division {
   display: flex;
   align-items: center;
-  padding: 30px 20px;
+  padding: 20px;
   color: white;
   height: 600px; 
 }
@@ -104,13 +104,7 @@
   width: 300px; 
 }
 
-.division .media-placeholder, .division .media img {
-  flex: 1;
-  height: 400px;
-  width: 400px;
-  background: #D3D3D3;
-  margin: 0 30px; 
-}
+
 
 .division h2 {
   font-size: 32px;
@@ -129,7 +123,7 @@
 
 .division.mechanical {
   background-color: #002E6E;
-  color: white; /* Ensure text color is white */
+  color: white; 
 }
 
 .division.electrical {
@@ -139,7 +133,7 @@
 
 .division.software {
   background-color: #002E6E;
-  color: white; /* Ensure text color is white */
+  color: white; 
 }
 
 .division.marketing {
@@ -150,7 +144,7 @@
 .division.mechanical h2::after, .division.software h2::after {
   content: '';
   display: block;
-  width: 300px; /* Full length of the paragraph */
+  width: 300px; 
   height: 4px;
   background: #00FFFF;
   position: absolute;
@@ -161,7 +155,7 @@
 .division.electrical h2::after, .division.marketing h2::after {
   content: '';
   display: block;
-  width: 300px; /* Full length of the paragraph */
+  width: 300px; 
   height: 4px;
   background: #FF00FF;
   position: absolute;
@@ -188,9 +182,9 @@
   padding: 10px 20px;
   font-size: 16px;
   border: none;
-  border-radius: 4px; /* Subtle rounded corners */
+  border-radius: 4px;
   cursor: pointer;
-  transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effect */
+  transition: background-color 0.3s, color 0.3s;
 }
 
 .cta-button:hover {
@@ -199,6 +193,19 @@
 }
 
 img{
-  width:800px;
+  width:500px;
   height:400px;
+}
+
+.partners-header {
+  background-color: #e91185;
+  color: #fff;
+  height: 35vh;
+}
+
+.section-title {
+  font-size: 3rem;
+  font-weight: 800; 
+  margin-bottom: 60px;
+  margin-top: 9rem;
 }
