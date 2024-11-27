@@ -7,15 +7,6 @@ import '../styles/Partners.css';
 
 const Partners = () => {
 
-  const handleDownload = () => {
-    const link = document.createElement("a");
-    link.href = "/dummypdf.pdf";
-    link.download = "Sponsorship_Package.pdf";
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  };
-
   const scrollToSection = (sectionId) => {
     const element = document.getElementById(sectionId);
     if (element) {
@@ -55,14 +46,14 @@ const Partners = () => {
 
       <section id="cta-section" className="cta-section text-center py-5">
         <h2 className="cta-title">Interested in Becoming a Partner?</h2>
-        <p className="cta-subtitle text-center">
+        <p className="cta-subtitle">
           UOAV team is always looking for new industry partners to work with.
           Through our team, students are given opportunities to work in a variety of industries using cutting edge technology.
         </p>
         <Button
           variant="info"
-          className="btn-custom cta-btn mt-3"
-          onClick={handleDownload}
+          className="btn-custom mt-3"
+          href="link-to-sponsorship-package"
         >
           Download Sponsorship Package
         </Button>
