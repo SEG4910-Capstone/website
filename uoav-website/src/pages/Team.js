@@ -8,9 +8,11 @@ import marketing from '../marketing cartoon.png';
 const Team = () => {
   return (
     <><div className="team-page">
+      
       <section className="partners-header text-center py-5">
         <h1 className="section-title">Our Team</h1>
       </section>
+
       <section className="division mechanical">
         <div className="text">
           <h2>Mechanical</h2>
