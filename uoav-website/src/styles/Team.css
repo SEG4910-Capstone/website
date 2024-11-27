@@ -83,16 +83,33 @@
   background-color: #FFFFFF;
 }
 
-.division {
+.team-banner {
+  background-color: #ff69b4; 
+  color: white;
+  padding: 60px 0; /* Increase padding to make the banner larger */
+  text-align: center;
   display: flex;
   align-items: center;
-  padding: 20px;
-  color: white;
-  height: 600px; 
+  justify-content: center;
+  min-height: 150px; /* Ensure a minimum height for the banner */
 }
 
-.division:nth-child(even) {
-  flex-direction: row-reverse;
+.banner-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.team-banner h1 {
+  font-size: 2.5rem;
+  margin: 0; /* Remove margin to center the text */
+}
+
+.division {
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .division .text {
@@ -101,7 +118,13 @@
   width: 300px; 
 }
 
-
+.division .division .media img {
+  flex: 1;
+  height: 400px;
+  width: 400px;
+  background: #D3D3D3;
+  margin: 0 30px;
+}
 
 .division h2 {
   font-size: 32px;
@@ -190,7 +213,7 @@
 }
 
 img{
-  width:500px;
+  width:400px;
   height:400px;
 }
 
@@ -205,4 +228,80 @@ img{
   font-weight: 800; 
   margin-bottom: 60px;
   margin-top: 9rem;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .team-banner {
+    padding: 20px 0; /* Adjust the padding to make the text higher */
+  }
+
+  .team-banner h1 {
+    font-size: 2rem;
+  }
+
+  .team-page .partners-header {
+    background-color: #e91185;
+    color: #fff;
+    height: 30vh;
+  }
+  
+  .team-page .section-title {
+    font-size: 3rem;
+    font-weight: 800; 
+    margin-bottom: 50px;
+    margin-top: 5rem;
+  }
+
+
+  .division {
+    flex-direction: column;
+    text-align: left; /* Align text to the left */
+  }
+
+  .division .media-placeholder, .division .media img {
+    order: 1;
+    height: auto;
+    width: 100%; /* Make the images fit the screen width */
+    max-width: 300px; /* Ensure a maximum width */
+    margin: 0 0 10px 0; /* Align images to the left */
+  }
+
+  .division h2 {
+    order: 2;
+    font-size: 2rem;
+    margin-top: 20px;
+  }
+
+  .division .text {
+    order: 3;
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .cta-footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #e91185;
+  }
+
+  .cta-footer h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  .cta-footer .cta-button {
+    background-color: #00e5ff;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .cta-footer .cta-button:hover {
+    background-color: #ff69b4;
+    color: white;
+  }
 }

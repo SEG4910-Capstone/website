@@ -1,4 +1,4 @@
-  .competition-section {
+.competition-section {
     padding: 50px 20px;
     display: flex;
     justify-content: center;
@@ -88,5 +88,28 @@
   .read-more-btn:hover .arrow {
     margin-left: 5px; 
   }
-  
-  
+
+/* Add responsive styles for CompetitionSection */
+@media (max-width: 768px) {
+  .competition-section {
+    padding: 20px;
+    text-align: center;
+  }
+
+  .competition-content {
+    max-width: 100%;
+  }
+
+  .competition-title {
+    font-size: 2rem;
+  }
+
+  .competition-description {
+    font-size: 1rem;
+  }
+
+  .competition-image {
+    width: 100%;
+    height: auto;
+  }
+}
