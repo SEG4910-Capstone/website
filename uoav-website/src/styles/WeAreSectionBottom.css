@@ -28,4 +28,22 @@
   border-radius: 10px; 
 }
 
-  
+/* Add responsive styles for WeAreSectionBottom */
+@media (max-width: 768px) {
+  .we-are-section {
+    padding: 20px;
+    text-align: center;
+  }
+
+  .we-are-content {
+    max-width: 100%;
+  }
+
+  .we-are-title {
+    font-size: 2rem;
+  }
+
+  .we-are-description {
+    font-size: 1rem;
+  }
+}
