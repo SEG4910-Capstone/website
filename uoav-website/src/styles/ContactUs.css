@@ -62,3 +62,19 @@
 .social-media-item span {
   font-size: 1.2rem;
 }
+
+@media (max-width: 768px) {
+  .social-media {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .social-media-item {
+    margin: 0.5rem;
+  }
+
+  .social-icon {
+    font-size: 2rem; /* Adjust icon size for mobile */
+  }
+}

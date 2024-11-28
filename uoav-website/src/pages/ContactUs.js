@@ -26,7 +26,7 @@ const ContactUs = () => {
               </a>
               <a href="https://www.youtube.com/channel/UC5UHVxBfFcMO_jw4yqCOOLg?themeRefresh=1" target="_blank" rel="noopener noreferrer" className="social-media-item">
                 <FaYoutube className="social-icon" />
-                <span>@ottawaautonomousvehiclegro9692
+                <span>Ottawa Autonomous Vehicle Group
                 </span>
               </a>
               <a href="https://www.linkedin.com/company/uottawa-autonomous-vehicle-team" target="_blank" rel="noopener noreferrer" className="social-media-item">
