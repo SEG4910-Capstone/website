@@ -1,0 +1,20 @@
+/* Responsive Styles */
+@media (max-width: 896px) {
+    
+    .hero-section {
+        padding: 20px 0; /* Adjust the padding to make the text higher */
+        
+    }
+    
+    .hero-section h1 {
+        font-size: 1.5rem;
+        margin-top: 15%; /* Add margin-top to ensure the text is not cut off */
+    }
+    
+    .hero-section p {
+        margin-bottom: 10%;
+        font-size: 0.8rem;
+    }
+      
+
+  }
