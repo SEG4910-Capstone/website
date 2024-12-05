@@ -32,5 +32,21 @@
     font-size: 0.875rem;
     font-weight: 400;
   }
+
+  .footer-link {
+    color: white; /* Set link color to white */
+    text-decoration: none;
+    margin: 0 5px;
+    transition: color 0.3s ease;
+  }
   
+  .footer-link:hover {
+    color: #00e5ff;
+  }
+  
+  .footer-container p {
+    color: white; /* Set trademark text color to white */
+  }
+  
+
   

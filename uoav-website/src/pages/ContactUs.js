@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container, Row, Col, Form, Button } from 'react-bootstrap';
-import { FaInstagram, FaYoutube, FaLinkedin } from 'react-icons/fa';
+import { FaInstagram, FaYoutube, FaLinkedin, FaDiscord } from 'react-icons/fa';
 import '../styles/ContactUs.css';
 
 const ContactUs = () => {
@@ -20,9 +20,9 @@ const ContactUs = () => {
         <Col md={5} className="mb-4">
           <Form className="contact-form p-4 shadow-sm">
             <div className="social-media mt-4">
-              <a href="https://www.instagram.com/ottawa.avg/" target="_blank" rel="noopener noreferrer" className="social-media-item">
+              <a href="https://www.instagram.com/uottawautonomous/" target="_blank" rel="noopener noreferrer" className="social-media-item">
                 <FaInstagram className="social-icon" />
-                <span>@ottawa.avg</span>
+                <span>@uottawautonomous</span>
               </a>
               <a href="https://www.youtube.com/channel/UC5UHVxBfFcMO_jw4yqCOOLg?themeRefresh=1" target="_blank" rel="noopener noreferrer" className="social-media-item">
                 <FaYoutube className="social-icon" />
@@ -32,6 +32,10 @@ const ContactUs = () => {
               <a href="https://www.linkedin.com/company/uottawa-autonomous-vehicle-team" target="_blank" rel="noopener noreferrer" className="social-media-item">
                 <FaLinkedin className="social-icon" />
                 <span>uOttawa Autonomous Vehicles</span>
+              </a>
+              <a href="https://discord.gg/Z3v342V9aY" target="_blank" rel="noopener noreferrer" className="social-media-item">
+                <FaDiscord className="social-icon" />
+                <span>Join our Discord!</span>
               </a>
             </div>
           </Form>

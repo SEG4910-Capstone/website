@@ -29,7 +29,7 @@
 }
 
 /* Add responsive styles for WeAreSectionBottom */
-@media (max-width: 768px) {
+@media (max-width: 896px) {
   .we-are-section {
     padding: 20px;
     text-align: center;

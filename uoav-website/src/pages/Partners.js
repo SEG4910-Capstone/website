@@ -52,7 +52,7 @@ const Partners = () => {
         </p>
         <Button
           variant="info"
-          className="btn-custom mt-3"
+          className="btn-custom2 mt-3"
           href="link-to-sponsorship-package"
         >
           Download Sponsorship Package

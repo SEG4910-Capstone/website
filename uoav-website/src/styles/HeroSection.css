@@ -1,3 +1,7 @@
+span{
+  color: #e91185;
+}
+
 .hero-container {
   background: #ffffff;
   padding: 200px; 
@@ -19,10 +23,6 @@
   line-height: 1.2; 
 }
 
-.highlight {
-  color: #ff69b4; 
-}
-
 .hero-subtitle { 
   margin: 40px 0;
   line-height: 1.6; 
@@ -30,8 +30,8 @@
 }
 
 .hero-button {
-  background-color: #00e5ff;
-  color: black;
+  background-color: black; /* Set button background color to black */
+  color: white; /* Set button text color to white */
   padding: 10px 20px;
   border-radius: 5px;
   text-decoration: none;
@@ -40,7 +40,7 @@
 }
 
 .hero-button:hover {
-  background-color: #ff69b4;
+  background-color: #e91185;
   color: white;
 }
 
@@ -55,7 +55,7 @@
 }
 
 /* Responsive styles */
-@media (max-width: 768px) {
+@media (max-width: 896px) {
   .hero-container {
     flex-direction: column;
     padding: 100px 20px; /* Adjust padding for mobile */

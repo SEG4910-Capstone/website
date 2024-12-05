@@ -90,7 +90,7 @@
   }
 
 /* Add responsive styles for CompetitionSection */
-@media (max-width: 768px) {
+@media (max-width: 896px) {
   .competition-section {
     padding: 20px;
     text-align: center;
@@ -98,6 +98,9 @@
 
   .competition-content {
     max-width: 100%;
+    display: flex;
+    flex-direction: column; /* Change flex direction to column for mobile */
+    align-items: center;
   }
 
   .competition-title {
@@ -111,5 +114,18 @@
   .competition-image {
     width: 100%;
     height: auto;
+    margin-bottom: 20px; /* Add margin to separate the image from the paragraph */
+    border: 1px solid #ccc; /* Add border to the image */
+  }
+
+  .image-overlay {
+    position: absolute;
+    bottom: 35px; /*overlay offsets*/
+    right: 40px;  /*overlay offsets*/
+    width: 90%;
+    height: 90%;
+    background-color: #00e5ff;
+    border-radius: 8px; 
+    z-index: -1;
   }
 }

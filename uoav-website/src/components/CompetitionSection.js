@@ -26,7 +26,7 @@ const CompetitionSection = () => {
             href="/team" 
             rel="noopener noreferrer"
           >
-            Read More <span className="arrow">→</span>
+            Read More →
           </a>
         </div>
 

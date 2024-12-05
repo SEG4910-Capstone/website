@@ -62,7 +62,7 @@ const Team = () => {
                   target="_blank"
                   className='cta-button'
                 >
-                  Apply →
+                  Join the Team →
                 </Button>
               </Col>
             </Row>

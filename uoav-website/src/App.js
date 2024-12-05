@@ -8,10 +8,12 @@ import Partners from './pages/Partners';
 import ContactUs from './pages/ContactUs';
 import './styles/App.css';
 import Footer from './components/Footer';
+import ScrollToTop from './components/ScrollToTop';
 
 function App() {
   return (
       <div className="App">
+        <ScrollToTop />
         <NavigationBar />
         <Routes>
           <Route path="/" element={<HomePage />} /> 
