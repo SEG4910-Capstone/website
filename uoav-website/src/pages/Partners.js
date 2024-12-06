@@ -46,14 +46,15 @@ const Partners = () => {
 
       <section id="cta-section" className="cta-section text-center py-5">
         <h2 className="cta-title">Interested in Becoming a Partner?</h2>
-        <p className="cta-subtitle">
+        <p className="cta-subtitle text-center">
           UOAV team is always looking for new industry partners to work with.
           Through our team, students are given opportunities to work in a variety of industries using cutting edge technology.
         </p>
         <Button
           variant="info"
           className="btn-custom2 mt-3"
-          href="link-to-sponsorship-package"
+          href="/SponsorPackage_2024-2025_UOAV.pdf"
+          download="SponsorPackage_2024-2025_UOAV"
         >
           Download Sponsorship Package
         </Button>
